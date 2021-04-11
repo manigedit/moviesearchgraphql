@@ -102,7 +102,6 @@ app.use(
 
 mongoose.connect(`mongodb+srv://${process.env.MONGO_USERID}:${process.env.MONGO_PASSWORD}@cluster0-wmcx9.mongodb.net/moviestab?retryWrites=true&w=majority`
 ).then(()=>{
-
     console.log('Connected');
     app.listen(process.env.PORT || 4000);
 }).catch(err=>{
